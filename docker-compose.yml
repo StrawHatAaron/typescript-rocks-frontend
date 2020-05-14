@@ -2,8 +2,8 @@ version: '3.8'
 
 services:
 
-  frontend:
-    container_name: frontend
+  typescript-rocks-frontend-dev:
+    container_name: typescript-rocks-frontend-dev
     build:
       context: .
       dockerfile: Dockerfile

@@ -19,5 +19,15 @@ $ docker run \
     -v /app/node_modules \
     -p 3001:3000 \
     -e CHOKIDAR_USEPOLLING=true \
-    frontend:dev
+    typescript-rocks-frontend:dev
 ```
+
+
+Better just to run this tho.
+```bash
+docker-compose up -d --build
+```
+
+
+References: 
+1. https://mherman.org/blog/dockerizing-a-react-app/
