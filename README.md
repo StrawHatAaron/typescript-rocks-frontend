@@ -6,11 +6,9 @@
 5. Since we want to use the container version of the “node_modules” folder, we configured another volume: -v /app/node_modules. You should now be able to remove the local “node_modules” flavor.
 6. -p 3001:3000 exposes port 3000 to other Docker containers on the same network (for inter-container communication) and port 3001 to the host.
 7. Finally, -e CHOKIDAR_USEPOLLING=true enables a polling mechanism via chokidar (which wraps fs.watch, fs.watchFile, and fsevents) so that hot-reloading will work.
-   
-For more, review this Stack Overflow question.
 
-
-
+# Type Script Rocks #
+Little bit about Docker..
 ```bash
 $ docker run \
     -it \
@@ -23,10 +21,25 @@ $ docker run \
 ```
 
 
-Better just to run this tho.
+## For Dev Environment ##
+build and start services on port 3001
 ```bash
 docker-compose up -d --build
 ```
+to stop the services and containers
+```bash 
+docker-compose stop
+```
+
+
+## For Prod Environment ##
+
+
+
+
+
+
+
 
 
 References: 
