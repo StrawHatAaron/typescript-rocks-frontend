@@ -4,20 +4,32 @@ import Contact from '../views/Contact';
 import HomeIcon from '@material-ui/icons/Home';
 import AssignmentIcon from '@material-ui/icons/Assignment';
 import MailIcon from '@material-ui/icons/Mail';
+import LinkedInIcon from '@material-ui/icons/LinkedIn';
+import GitHubIcon from '@material-ui/icons/GitHub';
 
-export const landingRoutes = [{
-    route:'Home',
+export const internalLandingRoutes = [{
+    route:'/Home',
     name: 'Home',
-    view: () => Home,
-    icon: HomeIcon
+    view: Home,
+    icon: HomeIcon,
 },{
-    route:'Portfolio',
+    route:'/Portfolio',
     name: 'Portfolio',
-    view: () => Portfolio,
-    icon: AssignmentIcon
+    view: Portfolio,
+    icon: AssignmentIcon,
 },{
-    route:'Contact',
+    route:'/Contact',
     name: 'Contact',
-    view: () => Contact,
-    icon: MailIcon
+    view: Contact,
+    icon: MailIcon,
 }];
+
+export const externalLandingRoutes = [{
+    route:"LinkedIn",
+    href: "https://linkedin.com/strawhataaron",
+    icon: LinkedInIcon
+},{
+    route:"GitHub",
+    href:"https://github.com/strawhataaron",
+    icon:GitHubIcon
+}]
