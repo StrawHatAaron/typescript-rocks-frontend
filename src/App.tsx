@@ -5,13 +5,9 @@ import ResponsiveDrawer from './components/ResponsiveDrawer';
 
 function App() {
   return (
-    <div className="App">
-      
-          <ResponsiveDrawer/>
-          Edit <code>src/App.tsx</code> and save to reload.
-      
-      
-    </div>
+    <>
+      <ResponsiveDrawer/>      
+    </>
   );
 }
 
