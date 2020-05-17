@@ -17,8 +17,6 @@ import ChevronRightIcon from '@material-ui/icons/ChevronRight';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
-import InboxIcon from '@material-ui/icons/MoveToInbox';
-import MailIcon from '@material-ui/icons/Mail';
 //aaron
 import {internalLandingRoutes, externalLandingRoutes} from './utils/Routes';
 //i think it would be natural for this file to handle a lot of the routing and linking 
