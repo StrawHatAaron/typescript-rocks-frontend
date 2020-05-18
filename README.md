@@ -22,6 +22,10 @@ $ docker run \
 
 
 ## For Dev Environment ##
+If you added more libs in package.json or with npm install
+``` bash
+docker build -t typescript-rocks-frontend:dev .
+```
 build and start services on port 3001
 ```bash
 docker-compose up -d --build
@@ -33,13 +37,17 @@ docker-compose stop
 
 
 ## For Prod Environment ##
+``` bash
 $ docker build -f Dockerfile.prod -t sample:prod .
+```
 
-
+``` bash
 $ docker run -it --rm -p 1337:80 sample:prod
+```
 
-
+``` bash
 $ docker-compose -f docker-compose.prod.yml up -d --build
+```
 
 
 

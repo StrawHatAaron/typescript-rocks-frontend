@@ -19,6 +19,7 @@ import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
 //aaron
 import {internalLandingRoutes, externalLandingRoutes} from './utils/Routes';
+import {DrawerLink} from './components/DrawerLink'
 //i think it would be natural for this file to handle a lot of the routing and linking 
 
 const drawerWidth = 240;
@@ -146,6 +147,7 @@ export default function App() {
         </div>
         <Divider />
         <List>
+          {}
           {internalLandingRoutes.map((c, index) => (
               <Link to={c.route}>
               <ListItem button key={c.route}>
