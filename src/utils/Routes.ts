@@ -1,6 +1,6 @@
 import Home from '../views/Home';
 import Portfolio from '../views/Portfolio';
-import Contact from '../views/Contact';
+import {Contact} from '../views/Contact';
 import Blog from '../views/Blog';
 import HomeIcon from '@material-ui/icons/Home';
 import AssignmentIcon from '@material-ui/icons/Assignment';
@@ -10,33 +10,33 @@ import GitHubIcon from '@material-ui/icons/GitHub';
 import BookIcon from '@material-ui/icons/Book';
 
 export const internalLandingRoutes = [{
-    route:'/Home',
     name: 'Home',
+    route:'/Home',
     view: Home,
     icon: HomeIcon,
 },{
-    route:'/Portfolio',
     name: 'Portfolio',
+    route:'/Portfolio',
     view: Portfolio,
     icon: AssignmentIcon,
 },{
-    route:'/Contact',
     name: 'Contact',
+    route:'/Contact',
     view: Contact,
     icon: MailIcon,
 },{
-    route:'/Blog',
     name: 'Blog',
+    route:'/Blog',
     view: Blog,
     icon: BookIcon,
 }];
 
 export const externalLandingRoutes = [{
-    route:"LinkedIn",
+    name:"LinkedIn",
     href: "https://linkedin.com/strawhataaron",
     icon: LinkedInIcon
 },{
-    route:"GitHub",
+    name:"GitHub",
     href:"https://github.com/strawhataaron",
     icon:GitHubIcon
 }]

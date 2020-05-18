@@ -147,25 +147,24 @@ export default function App() {
         </div>
         <Divider />
         <List>
-          {}
           {internalLandingRoutes.map((c, index) => (
-              <Link to={c.route}>
-              <ListItem button key={c.route}>
-                <ListItemIcon><c.icon/></ListItemIcon>
-                <ListItemText primary={c.name} />
-              </ListItem>
-              </Link>
+            <DrawerLink 
+              route={c.route}
+              name={c.name}
+              internal={true}
+              icon={<c.icon/>}
+            />
           ))}
         </List>
         <Divider />
         <List>
           {externalLandingRoutes.map((c, index) => (
-            <a href={c.href}>
-            <ListItem button key={c.route}>
-              <ListItemIcon><c.icon/></ListItemIcon>
-              <ListItemText primary={c.route} />
-            </ListItem>
-            </a>
+            <DrawerLink 
+              route={c.href}
+              name={c.name}
+              internal={false}
+              icon={<c.icon/>}
+            />
           ))}
         </List>
       </Drawer>

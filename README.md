@@ -8,7 +8,16 @@
 7. Finally, -e CHOKIDAR_USEPOLLING=true enables a polling mechanism via chokidar (which wraps fs.watch, fs.watchFile, and fsevents) so that hot-reloading will work.
 
 # Type Script Rocks #
+
+
+
+## For Dev Environment ##
+#### ATM this command works best for my docker container ###
 Little bit about Docker..
+If you added more libs in package.json or with npm install.
+``` bash
+docker build -t typescript-rocks-frontend:dev .
+```
 ```bash
 $ docker run \
     -it \
@@ -20,12 +29,8 @@ $ docker run \
     typescript-rocks-frontend:dev
 ```
 
-
-## For Dev Environment ##
-If you added more libs in package.json or with npm install
-``` bash
-docker build -t typescript-rocks-frontend:dev .
-```
+#### This is not working  ####
+Learning Docker better to get these commands to work is something I really want to do. 
 build and start services on port 3001
 ```bash
 docker-compose up -d --build
@@ -52,26 +57,27 @@ $ docker-compose -f docker-compose.prod.yml up -d --build
 
 ## Some Notes for how I manage my node environment ##
 
-###### since this is the main hub for all of my apps I will be spreading online I want to say how I have properly managed node environments when wanting the best dev experince with a plain local npm start ######
+###### since this is the main hub for all of my apps I will be spreading online I want to say how I have properly managed node environments when wanting the best dev experince with a plain local npm start. Note: Using zsh 5.7.1. ######
 
 ### 1. Clear npm's cache ###
 ```node
 sudo npm cache clean -f
 ```
-### 2. ###
+### 2. Install the node helper if you don't have it. It is an awesome helper! ###
 ```node
+sudo npm install -g n
 ```
-### 3. ###
+### 3. For knowing the latest stable node version. ###
 ```node
+sudo n stable
 ```
-### 4. ###
+### 4. Install/Switch to any version you want. ###
 ```node
+sudo n 8.0.0
 ```
-### 5. ###
+### 6. My Fav step. Choose the version of node you want to run! ###
 ```node
-```
-### 6. ###
-```node
+n
 ```
 
 #### My References and Kudos go out to: ####
