@@ -50,12 +50,30 @@ $ docker-compose -f docker-compose.prod.yml up -d --build
 ```
 
 
-
+## Some Notes for how I manage my node environment ##
 
 ###### since this is the main hub for all of my apps I will be spreading online I want to say how I have properly managed node environments when wanting the best dev experince with a plain local npm start ######
 
+### 1. Clear npm's cache ###
+```node
+sudo npm cache clean -f
+```
+### 2. ###
+```node
+```
+### 3. ###
+```node
+```
+### 4. ###
+```node
+```
+### 5. ###
+```node
+```
+### 6. ###
+```node
+```
 
-
-
-References: 
+#### My References and Kudos go out to: ####
 1. https://mherman.org/blog/dockerizing-a-react-app/
+2. https://codeforgeek.com/update-node-using-npm/
