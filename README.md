@@ -52,7 +52,7 @@ $ docker-compose -f docker-compose.prod.yml up -d --build
 
 
 
-
+###### since this is the main hub for all of my apps I will be spreading online I want to say how I have properly managed node environments when wanting the best dev experince with a plain local npm start ######
 
 
 
