@@ -9,11 +9,12 @@ import Chip from '@material-ui/core/Chip';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 
-import HomeIcon from '../assets/svg/HomeIcon'
+import JavascriptIcon from '../assets/mui/JavascriptIcon';
+import ReactIcon from '../assets/mui/ReactIcon';
+import SwiftIcon from '../assets/mui/SwiftIcon';
 
 import {SvgConverter} from '../utils/SvgConverter';
-import DockerSVG from '../assets/svg/docker.svg'
-import {SvgIcon} from '@material-ui/core';
+
 
 
 const useStyles = makeStyles({
@@ -40,11 +41,13 @@ export default function MediaCard() {
         />
         <CardContent>
           <Typography gutterBottom variant="h5" component="h2">
-            Lizard
+            tCheck
           </Typography>
           <Typography variant="body2" color="textSecondary" component="p">
-            Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging
-            across all continents except Antarctica
+            Built and launched in both Swift and React for iOS and Android. 
+            These projects where my first industry projects and are still managed to
+            this day. What I did as a software developer for this marijuana petroleum
+            spectroscopy mold firm was quite unique.
           </Typography>
         </CardContent>
       </CardActionArea>
@@ -54,22 +57,23 @@ export default function MediaCard() {
               size="small"
               clickable
               color="primary"
-              avatar={<HomeIcon/>}
+              avatar={<SwiftIcon/>}
             />
             <Chip
-              label="Swift"
+              label="React"
               size="small"
               clickable
               color="primary"
-              avatar={<SvgConverter svg={DockerSVG}/>}
+              avatar={<ReactIcon/>}
             />
             <Chip
-              label="Swift"
+              label="Javascript"
               size="small"
               clickable
               color="primary"
-              avatar={<HomeIcon/>}
+              avatar={<JavascriptIcon/>}
             />
+          
       </CardContent>
       <CardActions>
         <Button size="small" color="primary">
