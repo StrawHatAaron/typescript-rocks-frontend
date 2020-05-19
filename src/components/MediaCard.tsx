@@ -5,8 +5,16 @@ import CardActionArea from '@material-ui/core/CardActionArea';
 import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
+import Chip from '@material-ui/core/Chip';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
+
+import HomeIcon from '../assets/svg/HomeIcon'
+
+import {SvgConverter} from '../utils/SvgConverter';
+import DockerSVG from '../assets/svg/docker.svg'
+import {SvgIcon} from '@material-ui/core';
+
 
 const useStyles = makeStyles({
   root: {
@@ -17,8 +25,11 @@ const useStyles = makeStyles({
   },
 });
 
+
+
 export default function MediaCard() {
   const classes = useStyles();
+
   return (
     <Card className={classes.root}>
       <CardActionArea>
@@ -37,12 +48,35 @@ export default function MediaCard() {
           </Typography>
         </CardContent>
       </CardActionArea>
+      <CardContent>
+          <Chip
+              label="Swift"
+              size="small"
+              clickable
+              color="primary"
+              avatar={<HomeIcon/>}
+            />
+            <Chip
+              label="Swift"
+              size="small"
+              clickable
+              color="primary"
+              avatar={<SvgConverter svg={DockerSVG}/>}
+            />
+            <Chip
+              label="Swift"
+              size="small"
+              clickable
+              color="primary"
+              avatar={<HomeIcon/>}
+            />
+      </CardContent>
       <CardActions>
         <Button size="small" color="primary">
-          Share
+          Application
         </Button>
         <Button size="small" color="primary">
-          Learn More
+          GitHub
         </Button>
       </CardActions>
     </Card>
