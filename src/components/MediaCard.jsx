@@ -27,34 +27,13 @@ const useStyles = makeStyles({
   },
 });
 
-type colorTypes = 
-  'primary' |
-  'secondary';
 
 
+export default function MediaCard(props){
 
-interface ChipProps{
-  label:string,
-  color:colorTypes,
-  avatar:any
-};
-
-interface MediaCardProps{
-  title:string,
-  img:string,
-  explain:string,
-  chip?:[{ 
-    label: string; 
-    color: string; 
-    avatar: (props: any) => Element; 
-  }];
-};
-
-export const MediaCard: React.FC<MediaCardProps> = ({
-title, img, explain, chip}) => {
   const classes = useStyles();
 
-  console.log(img);
+  console.log(props.img);
 
   return (
     <Card className={classes.root}>
@@ -62,20 +41,27 @@ title, img, explain, chip}) => {
         <CardMedia
 
           className={classes.media}
-          image={img}
+          image={props.img}
           title="Contemplative Reptile"
         />
         <CardContent>
           <Typography gutterBottom variant="h5" component="h2">
-          {title}
+          {props.title}
           </Typography>
           <Typography variant="body2" color="textSecondary" component="p">
-          {explain}
+          {props.explain}
           </Typography>
         </CardContent>
       </CardActionArea>
       <CardContent>
-        
+        {props.chip.map((c,i) => (
+          <Chip
+            clickable 
+            label={c.label}
+            color={c.color} 
+            size="small" 
+            avatar={<c.avatar/>}/>
+        ))}
       </CardContent>
       <CardActions>
         <Button size="small" color="primary">
