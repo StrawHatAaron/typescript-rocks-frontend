@@ -85,7 +85,7 @@ const useStyles = makeStyles((theme: Theme) =>
   }),
 );
 
-export default function App() {
+const App = () => {
   const classes = useStyles();
   const theme = useTheme();
   const [open, setOpen] = React.useState(false);
@@ -178,3 +178,5 @@ export default function App() {
     </div>
   );
 }
+
+export default App

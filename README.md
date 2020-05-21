@@ -80,6 +80,15 @@ sudo n 8.0.0
 n
 ```
 
+
+# For home hosting use DuckDNS
+
+https://www.duckdns.org/update?domains={typescriptrocks.duckdns.org}&token={secret}&txt={YOURVALUE}[&verbose=true][&clear=true]
+
+
+
+
 #### My References and Kudos go out to: ####
 1. https://mherman.org/blog/dockerizing-a-react-app/
 2. https://codeforgeek.com/update-node-using-npm/
+3. https://duckdns.org/spec.jsp
