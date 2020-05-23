@@ -1,5 +1,5 @@
 import React from 'react';
-import { createMuiTheme, ThemeProvider } from '@material-ui/core/styles';
+import { createMuiTheme, } from '@material-ui/core/styles';
 import useMediaQuery from '@material-ui/core/useMediaQuery';
 
 const lightPrimary = "#0d47a1";
@@ -7,6 +7,23 @@ const lightSecondary = "#f48fb1";
 const darkPrimary = "#03a9f4";
 const darkSecondary = "#880e4f"
 
+export const themeKey = "theme";
+export const getTheme:() => (string | null)  = 
+function(){
+  try{
+    return window.localStorage.getItem(themeKey);
+  } catch(error){
+    console.log("themes.ts getTheme", error)
+    return "error";
+  }
+}
+export const setTheme = (value:string) => {
+  try {
+    window.localStorage.setItem(themeKey, value);
+  } catch (error) {
+    console.log('themes.ts setTheme', error);
+  }
+}
 
 interface PaletteIntention {
     light?: string;
@@ -20,44 +37,45 @@ type PaletteTonalOffset = number | {
     dark: number;
   };
 
-export const prefersDarkMode = useMediaQuery('(prefers-color-scheme: dark)');
+// export const prefersDarkMode = useMediaQuery('(prefers-color-scheme: dark)');
 
-export const appTheme = createMuiTheme({
-typography: {
-    // In Chinese and Japanese the characters are usually larger,
-    // so a smaller fontsize may be appropriate.
-    fontSize: 12,
-},
-palette: {
-    primary: {
-    main: '#ff4400',
-    // light: will be calculated from palette.primary.main,
-    light: lightPrimary,
-    // dark: will be calculated from palette.primary.main,
-    dark:darkPrimary
-    // contrastText: will be calculated to contrast with palette.primary.main
+export const darkTheme = createMuiTheme({
+    typography: {
+        fontSize: 12,
     },
-    secondary: {
-    main: '#0044ff',
-    light: lightSecondary,
-    // dark: will be calculated from palette.secondary.main,
-    dark: darkSecondary,
-    contrastText: '#ffcc00',
+    palette: {
+        type: 'dark',
+        primary: {
+          main: darkPrimary,
+          dark: darkPrimary,
+          light: lightPrimary,
+        },
+        secondary: {
+          main: darkSecondary,
+          light: lightSecondary,
+          dark: darkSecondary,
+          contrastText: '#ffcc00',
+        },
+        contrastThreshold: 3,
+        tonalOffset: 0.2,
     },
-    // Used by `getContrastText()` to maximize the contrast between
-    // the background and the text.
-    contrastThreshold: 3,
-    // Used by the functions below to shift a color's luminance by approximately
-    // two indexes within its tonal palette.
-    // E.g., shift from Red 500 to Red 300 or Red 700.
-    tonalOffset: 0.2,
-},
-});
+  });
 
-export const lightTheme = {
-  background: 'linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%)',
-};
+  export const lightTheme = createMuiTheme({
+    typography: {
+        fontSize: 12,
+    },
+    palette: {
+        primary: {
+          main: lightPrimary,
+        },
+        secondary: {
+          main: lightSecondary,
+          contrastText: '#ffcc00',
+        },
+        contrastThreshold: 3,
+        tonalOffset: 0.2,
+    },
+  })
 
-export const darkTheme = {
-
-}
+  
