@@ -38,7 +38,7 @@ const App = () => {
         <div className={classes.toolbar}/>
         {internalLandingRoutes.map((c) => (
            <Route
-            key={c.route+"landingpages-routes"}
+            key={c.route+"landing-pages-routes"}
             exact path={c.route}
             component={c.view}
           /> 

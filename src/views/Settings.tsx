@@ -1,10 +1,10 @@
-import React from 'react'
+import React, {useState}  from 'react'
 import Typography from '@material-ui/core/Typography';
 import Switch from '@material-ui/core/Switch';
 import {getTheme, setTheme,} from '../utils/themes';
 
 function Settings() {
-  const [state, setState] = React.useState({
+  const [state, setState] = useState({
     darkTheme: true,
   });
 

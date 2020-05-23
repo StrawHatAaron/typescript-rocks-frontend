@@ -1,16 +1,17 @@
 import React, {useEffect, useState} from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter as Router, } from "react-router-dom";
-import { ThemeProvider, createMuiTheme } from '@material-ui/core/styles';
-import useMediaQuery from '@material-ui/core/useMediaQuery';
-import {darkTheme, lightTheme, getTheme} from './utils/themes';
+// import { ThemeProvider, createMuiTheme } from '@material-ui/core/styles';
+// import useMediaQuery from '@material-ui/core/useMediaQuery';
+// import {darkTheme, lightTheme, getTheme} from './utils/themes';
+import Store from './utils/Store';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
-const lightPrimary = "#0d47a1";
-const lightSecondary = "#f48fb1";
-const darkPrimary = "#03a9f4";
-const darkSecondary = "#880e4f"
+// const lightPrimary = "#0d47a1";
+// const lightSecondary = "#f48fb1";
+// const darkPrimary = "#03a9f4";
+// const darkSecondary = "#880e4f"
 
 // const themeObject = {
 //   // themeName: 
@@ -85,13 +86,15 @@ function Index() {
   //   [prefersDarkMode, getTheme],
   // );
   return(
-    <Router>
-      <React.StrictMode>
-        {/* <MuiThemeProvider theme={theme}> */}
-          <App />
-        {/* </MuiThemeProvider> */}
-      </React.StrictMode>
-    </Router>
+    <Store>
+      <Router>
+        <React.StrictMode>
+          {/* <MuiThemeProvider theme={theme}> */}
+            <App />
+          {/* </MuiThemeProvider> */}
+        </React.StrictMode>
+      </Router>
+    </Store>
   )
 }
 
