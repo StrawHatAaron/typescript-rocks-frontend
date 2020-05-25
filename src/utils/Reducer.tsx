@@ -8,7 +8,6 @@ import Typography from '@material-ui/core/Typography';
 interface Switch {
     text: string;
     on: boolean;
-    
 }
 
 type SwitchState = Switch;
