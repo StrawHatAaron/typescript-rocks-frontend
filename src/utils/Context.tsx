@@ -1,13 +1,14 @@
 import { createContext, useContext } from 'react';
-
-const lightPrimary = "#0d47a1";
-const lightSecondary = "#f48fb1";
-const darkPrimary = "#03a9f4";
-const darkSecondary = "#880e4f"
+import {
+    lightPrimary,
+    lightSecondary,
+    darkPrimary,
+    darkSecondary,
+} from './themes';
 
 export type ITheme = {
-
   toggleTheme:() => void;
+  setFontSize:(value: number) => void;
   themeObject:{
     // themeName: 
     typography: {
@@ -33,6 +34,7 @@ export type ITheme = {
 // The standard way to create context. It takes an initial value object
 export const ThemeContext = createContext<ITheme>({
   toggleTheme: () => {},
+  setFontSize: () => {},
   themeObject:{
     // themeName: 
     typography: {

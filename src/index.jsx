@@ -3,55 +3,18 @@ import ReactDOM from 'react-dom';
 import { BrowserRouter as Router, } from "react-router-dom";
 import { ThemeProvider, createMuiTheme } from '@material-ui/core/styles';
 // import useMediaQuery from '@material-ui/core/useMediaQuery';
-import {darkTheme, lightTheme, getTheme} from './utils/themes';
+import {getTheme} from './utils/themes';
 import {ThemeContext} from './utils/Context';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
-import { MuiThemeProvider } from '@material-ui/styles';
 
-const lightPrimary = "#0d47a1";
-const lightSecondary = "#f48fb1";
-const darkPrimary = "#03a9f4";
-const darkSecondary = "#880e4f"
-
-
-// const localStorage = { 
-//   async get() { return 'hello' }
-// };
-
-// const init = { loading: true };
-
-// export const useUserProfile = () => {
-//   const [theTheme, setTheTheme] = useState('dark');
-//   useEffect(() => {
-//     localStorage.get()
-//       .then(profile => setTheme({''}))
-//       .catch(error => setTheme({ '' }));
-//   }, []);
-
-//   return theTheme;
-// };
-
-// const useDarkMode = () => {
-//   const [theme, setTheme] = useState(themeObject);
-//   const { palette : {type }} = theme;
-//   const toggleDarkMode = () => {
-//     const updatedTheme = {
-//       ...theme,
-//       palette: {
-//         ...theme.palette,
-//         type: getTheme()==='light' ? 'dark' : 'light'
-//       }
-//     }
-//     setTheme(updatedTheme);
-//   }
-//   return [theme, toggleDarkMode]
-// }
-
-const themes = {
-  light: 'light',
-  dark: 'dark'
-}
+import {
+  lightPrimary,
+  lightSecondary,
+  darkPrimary,
+  darkSecondary,
+  themes
+} from './utils/themes';
 
 class Index extends React.Component {
   
@@ -70,11 +33,23 @@ class Index extends React.Component {
         }
       }));
     };
+
+    this.setFontSize = (value) => {
+      console.log("hey yea we made it here")
+      this.setState(state => ({
+        themeObject:{
+          ...state.themeObject,
+          typography:{
+            fontSize:value,
+            ...state.themeObject.palette
+          }
+        }
+      }))
+    } 
   
     this.state = {
-      themeMode: themes.dark,
       toggleTheme: this.toggleTheme,
-
+      setFontSize: this.setFontSize,
       themeObject:{
         // themeName: 
         typography: {
