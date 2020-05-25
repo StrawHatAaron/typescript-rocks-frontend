@@ -2,6 +2,7 @@ import React, {useContext, useEffect, useState}  from 'react'
 import Typography from '@material-ui/core/Typography';
 import Switch from '@material-ui/core/Switch';
 import {getTheme, setTheme,} from '../utils/themes';
+import {ThemeContext} from '../utils/Context';
 
 function Settings() {
   const [state, setState] = useState({
@@ -18,16 +19,20 @@ function Settings() {
   // };
 
   return (
-    <Typography paragraph>
-      Change theme
-      <Switch
-        checked={state.on}
-        onChange={() => setState({on: !state.on})}
-        color="primary"
-        name="darkTheme"
-        inputProps={{ 'aria-label': 'primary checkbox' }}/>
-      {state.on? "dark" : "light"}
-    </Typography>   
+    <ThemeContext.Consumer>
+      {({themeObject, toggleTheme}) => (
+        <Typography paragraph>
+          Change theme
+          <Switch
+            checked={themeObject.palette.type==='dark'}
+            onChange={() => toggleTheme()}
+            color="primary"
+            name="darkTheme"
+            inputProps={{ 'aria-label': 'primary checkbox' }}/>
+          {themeObject.palette.type}
+        </Typography> 
+      )}
+    </ThemeContext.Consumer>  
   )
 }
 

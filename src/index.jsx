@@ -60,7 +60,14 @@ class Index extends React.Component {
 
     this.toggleTheme = () => {
       this.setState(state => ({
-        darkMode: state.darkMode === themes.dark ? themes.light : themes.dark
+        themeObject: {
+          ...state.themeObject,
+          palette:{
+            ...state.themeObject.palette,
+            type: state.themeObject.palette.type===themes.dark 
+              ? themes.light : themes.dark
+          }
+        }
       }));
     };
   
@@ -102,11 +109,15 @@ class Index extends React.Component {
     return(
       <React.StrictMode>
         <ThemeContext.Provider value={this.state}>
-          <ThemeProvider>
-          <Router>
-            <App/>
-          </Router>
-          </ThemeProvider>
+          <ThemeContext.Consumer>
+            {({themeObject}) => (
+              <ThemeProvider theme={createMuiTheme(themeObject)}>
+              <Router>
+                <App/>
+              </Router>
+              </ThemeProvider>
+            )}
+          </ThemeContext.Consumer>
         </ThemeContext.Provider>
       </React.StrictMode>
     )
