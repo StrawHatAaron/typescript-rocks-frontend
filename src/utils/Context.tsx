@@ -1,4 +1,4 @@
-import { createContext, useContext } from 'react';
+import { createContext, } from 'react';
 import {
     lightPrimary,
     lightSecondary,
@@ -44,12 +44,12 @@ export const ThemeContext = createContext<ITheme>({
     palette: {
         type: 'dark',
         primary: {
-          dark: "#03a9f4",
-          light: "#f48fb1",
+          dark: darkPrimary,
+          light: lightPrimary,
         },
         secondary: {
-          light: "#f48fb1",
-          dark: "#880e4f",
+          light: lightSecondary,
+          dark: darkSecondary,
           contrastText: '#ffcc00',
         },
         contrastThreshold: 3,

@@ -1,4 +1,4 @@
-import React, {useState,} from 'react';
+import React from 'react';
 import {Link} from 'react-router-dom';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
@@ -22,7 +22,10 @@ export const DrawerLink: React.FC<DrawerLinkProps> = ({
         </ListItem>
         </Link>
     )}else{return(
-        <a href={route} target="_blank">
+        <a 
+            href={route} 
+            target="_blank"
+            rel="noopener noreferrer">
         <ListItem>
             <ListItemIcon>{icon}</ListItemIcon>
             <ListItemText primary={name}/>    

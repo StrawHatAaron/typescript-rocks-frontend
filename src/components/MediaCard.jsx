@@ -6,15 +6,8 @@ import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Chip from '@material-ui/core/Chip';
-
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
-
-import JavascriptIcon from '../assets/mui/JavascriptIcon';
-import ReactIcon from '../assets/mui/ReactIcon';
-import SwiftIcon from '../assets/mui/SwiftIcon';
-
-
 
 
 const useStyles = makeStyles({
@@ -60,7 +53,7 @@ export default function MediaCard(props){
             label={c.label}
             color={c.color} 
             size="small" 
-            avatar={<c.avatar/>}/>
+            avatar={() => <c.avatar/>}/>
         ))}
       </CardContent>
       <CardActions>

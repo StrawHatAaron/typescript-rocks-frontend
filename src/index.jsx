@@ -1,9 +1,8 @@
-import React, {useEffect, useState} from 'react';
+import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter as Router, } from "react-router-dom";
 import { ThemeProvider, createMuiTheme } from '@material-ui/core/styles';
 // import useMediaQuery from '@material-ui/core/useMediaQuery';
-import {getTheme} from './utils/themes';
 import {ThemeContext} from './utils/Context';
 import App from './App';
 import * as serviceWorker from './serviceWorker';

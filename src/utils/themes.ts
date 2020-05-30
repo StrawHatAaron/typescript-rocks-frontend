@@ -1,7 +1,3 @@
-import React from 'react';
-import { createMuiTheme, } from '@material-ui/core/styles';
-import useMediaQuery from '@material-ui/core/useMediaQuery';
-
 export const lightPrimary = "#0d47a1";
 export const lightSecondary = "#f48fb1";
 export const darkPrimary = "#03a9f4";

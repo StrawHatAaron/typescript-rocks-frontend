@@ -134,6 +134,7 @@ export default function Blog() {
             <ListItemLink to={beginner} />
           </List>
         </nav>
+        <h1>Blog coming soon.</h1>
       </div>
     </MemoryRouter>
   );

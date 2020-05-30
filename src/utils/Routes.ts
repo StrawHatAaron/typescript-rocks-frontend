@@ -41,7 +41,7 @@ export const internalLandingRoutes = [{
 
 export const externalLandingRoutes = [{
     name:"LinkedIn",
-    href: "https://linkedin.com/strawhataaron",
+    href: "https://www.linkedin.com/in/strawhataaron",
     icon: LinkedInIcon
 },{
     name:"GitHub",

@@ -1,18 +1,16 @@
-import React, { useReducer } from "react";
-import {getTheme, setTheme} from "./themes";
+import {setTheme} from "./themes";
 import Switch from '@material-ui/core/Switch';
-import Typography from '@material-ui/core/Typography';
 
 //gonna just try to pass state up the tree
 
-interface Switch {
+export interface Switch {
     text: string;
     on: boolean;
 }
 
 type SwitchState = Switch;
 
-type Actions = 
+export type Actions = 
     | {type: "setOff"; text:"light" }
     | {type: "setOn";  text:"dark"  }
 
@@ -29,23 +27,3 @@ export const Reducer = (state: SwitchState, action:Actions) => {
             return state;
     }
 }
-
-// export const SwitchReducer: React.FC = () => {
-//   const initialVal = {text:"light", on:false};
-//   const [switches, dispatch] = useReducer(ThemeReducer, initialVal);
-
-//   return(
-//     <Typography>
-//         <div>
-//       {JSON.stringify(switches)}
-//       <button
-//         onClick={() => {
-//           dispatch({ type: "setOff", text: "light" });
-//         }}
-//       >
-//         +
-//       </button>
-//     </div>
-//     </Typography>
-//   )
-// }
