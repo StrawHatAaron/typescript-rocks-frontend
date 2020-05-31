@@ -32,7 +32,6 @@ export default function MediaCard(props){
     <Card className={classes.root}>
       <CardActionArea>
         <CardMedia
-
           className={classes.media}
           image={props.img}
           title="Contemplative Reptile"
@@ -53,7 +52,7 @@ export default function MediaCard(props){
             label={c.label}
             color={c.color} 
             size="small" 
-            avatar={() => <c.avatar/>}/>
+            avatar={<c.avatar/>}/>
         ))}
       </CardContent>
       <CardActions>
