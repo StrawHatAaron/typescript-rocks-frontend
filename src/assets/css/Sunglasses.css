@@ -1,3 +1,10 @@
+div.glasses-container{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
 div.react-logo{
     width: 100%;
     height: auto;
@@ -30,10 +37,8 @@ div.react-logo{
 
 /*0.07688679245 ratio*/
 div.glasses {
-    left: 5em;
     position: relative;
     width: 7em;
-    
     margin:1em;
 }
 

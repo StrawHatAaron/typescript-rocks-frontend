@@ -25,7 +25,6 @@ const useStyles = makeStyles({
   button:{
     display:'block',
     margin:'auto',
-
   }
 });
 
@@ -58,11 +57,13 @@ export const Contact: React.SFC<{}> = () => {
     <Typography variant="h3">Contact Me!</Typography>
     <Card className={classes.card}>
     <CardContent className={classes.cardContent}>
+      <div className="glasses-container">
       <div className="glasses">
         <img src={ReactLogo} className="react-logo App-logo" alt="React logo" />
         <div className="g-top "></div>
         <div className="g-left glass"></div>
         <div className="g-right glass"></div>
+      </div>
       </div>
       <TextField
         className={classes.textField}
