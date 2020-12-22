@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/typescript-rocks-frontend/static/css/main.abf36e19.chunk.css",
+    "main.js": "/typescript-rocks-frontend/static/js/main.5eb61bb4.chunk.js",
+    "main.js.map": "/typescript-rocks-frontend/static/js/main.5eb61bb4.chunk.js.map",
+    "runtime-main.js": "/typescript-rocks-frontend/static/js/runtime-main.e41478c4.js",
+    "runtime-main.js.map": "/typescript-rocks-frontend/static/js/runtime-main.e41478c4.js.map",
+    "static/js/2.81909354.chunk.js": "/typescript-rocks-frontend/static/js/2.81909354.chunk.js",
+    "static/js/2.81909354.chunk.js.map": "/typescript-rocks-frontend/static/js/2.81909354.chunk.js.map",
+    "index.html": "/typescript-rocks-frontend/index.html",
+    "precache-manifest.4f7f686da8aad46e7359fec613f12944.js": "/typescript-rocks-frontend/precache-manifest.4f7f686da8aad46e7359fec613f12944.js",
+    "service-worker.js": "/typescript-rocks-frontend/service-worker.js",
+    "static/css/main.abf36e19.chunk.css.map": "/typescript-rocks-frontend/static/css/main.abf36e19.chunk.css.map",
+    "static/js/2.81909354.chunk.js.LICENSE.txt": "/typescript-rocks-frontend/static/js/2.81909354.chunk.js.LICENSE.txt",
+    "static/media/BuildTheLanes.png": "/typescript-rocks-frontend/static/media/BuildTheLanes.4910d33c.png",
+    "static/media/Duplicagent.png": "/typescript-rocks-frontend/static/media/Duplicagent.a4d612d0.png",
+    "static/media/logo.svg": "/typescript-rocks-frontend/static/media/logo.5d5d9eef.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e41478c4.js",
+    "static/js/2.81909354.chunk.js",
+    "static/css/main.abf36e19.chunk.css",
+    "static/js/main.5eb61bb4.chunk.js"
+  ]
+}
