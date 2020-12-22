@@ -16,7 +16,7 @@ import {
 } from './utils/themes';
 
 class Index extends React.Component {
-  
+
   constructor(props){
     super(props);
 
@@ -26,7 +26,7 @@ class Index extends React.Component {
           ...state.themeObject,
           palette:{
             ...state.themeObject.palette,
-            type: state.themeObject.palette.type===themes.dark 
+            type: state.themeObject.palette.type===themes.dark
               ? themes.light : themes.dark
           }
         }
@@ -44,13 +44,13 @@ class Index extends React.Component {
           }
         }
       }))
-    } 
-  
+    }
+
     this.state = {
       toggleTheme: this.toggleTheme,
       setFontSize: this.setFontSize,
       themeObject:{
-        // themeName: 
+        // themeName:
         typography: {
             fontSize: 12,
             fontFamily: 'Bitter',
@@ -72,12 +72,12 @@ class Index extends React.Component {
             tonalOffset: 0.2,
         }),
       }
-    };  
+    };
 
-  } 
+  }
 
-  
-  
+
+
 
   render(){
     return(

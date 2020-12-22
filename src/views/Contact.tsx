@@ -34,7 +34,7 @@ type EmailMessage = {
   message:string
 }
 
-export const Contact: React.SFC<{}> = () => {
+export const Contact: React.FC<{}> = () => {
 
   const classes = useStyles();
 
