@@ -56,10 +56,15 @@ export default function MediaCard(props){
         ))}
       </CardContent>
       <CardActions>
-        <Button size="small" color="primary">
+        <Button href={props.application} size="small" color="primary">
           Application
         </Button>
-        <Button size="small" color="primary">
+        <Button 
+          href={props.github} 
+          size="small" 
+          color={props.github==="" ? "secondary" : "primary"}
+          disabled={props.github==="" ? true : false}
+          >
           GitHub
         </Button>
       </CardActions>

@@ -19,6 +19,11 @@ import PostgreSQLIcon from '../assets/mui/PostgreSQLIcon';
 import tCheckImage from '../assets/img/tCheck.png';
 import BuildTheLanesImage from '../assets/img/BuildTheLanes.png';
 import DuplicagentImage from '../assets/img/Duplicagent.png';
+import SolarLeadGeneratorImage from '../assets/img/solar-leads.png';
+import FoundationImage from '../assets/img/foundation.png';
+import ReactiveNerdImage from '../assets/img/reactive-nerd.png';
+import MiniJavascriptAcademy from '../assets/img/javascript-academy.png';
+import DesignerWebsImage from '../assets/img/DesignerWebs.png';
 
 const chipTypes = [{
   //0
@@ -89,14 +94,9 @@ const chipTypes = [{
 
 const portfolioRoutes = [{
   title:"tCheck",
+  application:"https://tcheck.me/",
+  github:"",
   img:tCheckImage,
-  linkInfo:[{
-    name:"Application",
-    url:"TBD"
-  },{
-    name:"GitHub",
-    url:"TBD"
-  }],
   explain:"Built and launched in both Swift and React for iOS and Android. These projects where my first industry projects and are still managed to this day. What I did as a software developer for this marijuana petroleum spectroscopy mold firm was quite unique.",
   chip:[
     chipTypes[0],
@@ -104,6 +104,8 @@ const portfolioRoutes = [{
     chipTypes[3]]
 },{
   title:"Build The Lanes",
+  application:"https://strawhataaron.github.io/build-the-lanes/#/",
+  github:"https://github.com/StrawHatAaron/build-the-lanes",
   img:BuildTheLanesImage,
   explain:"A Non-Profit group of Civil Engineer and I are just trying to advocate for using bikes for several good reasons that we go over in the Why Bikes section.",
   chip:[
@@ -113,8 +115,10 @@ const portfolioRoutes = [{
     chipTypes[4]]
 },{
   title:"Duplicagent",
+  application:"https://strawhataaron.github.io/DuplicAgent-FrontEnd/#/",
+  github:"https://github.com/StrawHatAaron/DuplicAgent-FrontEnd",
   img:DuplicagentImage,
-  explain:"This was a free concept project for abatement inscurance broker Jack Brooks that is always activly looking how he can provide the best insurance solutions while working at Empire West Insurance. There is no longer any affiliation.",
+  explain:"This was a free concept project for abatement insurance broker Jack Brooks that is always activly looking how he can provide the best insurance solutions while working at Empire West Insurance. There is no longer any affiliation.",
   chip:[
     chipTypes[1],
     chipTypes[3], 
@@ -126,6 +130,47 @@ const portfolioRoutes = [{
     chipTypes[11],
     chipTypes[12]
   ]
+},{  
+  title:"Solar Lead Generator",
+  application:"https://strawhataaron.github.io/LeadGenerator/#/ZipCode",
+  github:"https://github.com/StrawHatAaron/LeadGenerator",
+  img:SolarLeadGeneratorImage,
+  explain:"Just a pretty UI for an example site that could collect leads for solar.",
+  chip:[
+    chipTypes[3], 
+  ]
+},{  
+  title:"Reactive Nerd",
+  application:"https://strawhataaron.github.io/reactive-nerd/",
+  github:"https://github.com/StrawHatAaron/reactive-nerd",
+  img:ReactiveNerdImage,
+  explain:"This was my first ever ReactJS project. Super simple. UI Only.",
+  chip:[
+    chipTypes[3], 
+  ]
+},{  
+  title:"CSS and React Foundations",
+  application:"https://strawhataaron.github.io/react-self-learned-foundations/",
+  github:"https://github.com/StrawHatAaron/react-self-learned-foundations",
+  img:FoundationImage,
+  explain:"This was some good practice of React, HTML and CSS. UI Only.",
+  chip:[
+    chipTypes[3], 
+  ]
+},{
+  title:"Mini Javascript Academy",
+  application:"https://strawhataaron.github.io/mini-javascript-academy/main/tutorials.htm",
+  github:"https://github.com/StrawHatAaron/mini-javascript-academy",
+  img:MiniJavascriptAcademy,
+  explain:"This was some good practice of React, HTML and CSS. UI Only.",
+  chip:[ ] 
+},{
+  title:"Designer Webs",
+  application:"https://strawhataaron.github.io/Designer-Webs/index",
+  github:"https://github.com/StrawHatAaron/Designer-Webs",
+  img:DesignerWebsImage,
+  explain:"First Website I wrote",
+  chip:[ ] 
 }]
 
 export default function Portfolio() {
@@ -139,6 +184,8 @@ export default function Portfolio() {
             img={c.img}
             explain={c.explain}
             chip={c.chip}
+            application={c.application}
+            github={c.github}
             />
         </Grid>
       ))}
