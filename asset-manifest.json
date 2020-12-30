@@ -1,25 +1,30 @@
 {
   "files": {
     "main.css": "/typescript-rocks-frontend/static/css/main.abf36e19.chunk.css",
-    "main.js": "/typescript-rocks-frontend/static/js/main.5eb61bb4.chunk.js",
-    "main.js.map": "/typescript-rocks-frontend/static/js/main.5eb61bb4.chunk.js.map",
+    "main.js": "/typescript-rocks-frontend/static/js/main.55de9c19.chunk.js",
+    "main.js.map": "/typescript-rocks-frontend/static/js/main.55de9c19.chunk.js.map",
     "runtime-main.js": "/typescript-rocks-frontend/static/js/runtime-main.e41478c4.js",
     "runtime-main.js.map": "/typescript-rocks-frontend/static/js/runtime-main.e41478c4.js.map",
-    "static/js/2.81909354.chunk.js": "/typescript-rocks-frontend/static/js/2.81909354.chunk.js",
-    "static/js/2.81909354.chunk.js.map": "/typescript-rocks-frontend/static/js/2.81909354.chunk.js.map",
+    "static/js/2.26d730e5.chunk.js": "/typescript-rocks-frontend/static/js/2.26d730e5.chunk.js",
+    "static/js/2.26d730e5.chunk.js.map": "/typescript-rocks-frontend/static/js/2.26d730e5.chunk.js.map",
     "index.html": "/typescript-rocks-frontend/index.html",
-    "precache-manifest.4f7f686da8aad46e7359fec613f12944.js": "/typescript-rocks-frontend/precache-manifest.4f7f686da8aad46e7359fec613f12944.js",
+    "precache-manifest.03451fc4c0a21fadbf8904db75837174.js": "/typescript-rocks-frontend/precache-manifest.03451fc4c0a21fadbf8904db75837174.js",
     "service-worker.js": "/typescript-rocks-frontend/service-worker.js",
     "static/css/main.abf36e19.chunk.css.map": "/typescript-rocks-frontend/static/css/main.abf36e19.chunk.css.map",
-    "static/js/2.81909354.chunk.js.LICENSE.txt": "/typescript-rocks-frontend/static/js/2.81909354.chunk.js.LICENSE.txt",
+    "static/js/2.26d730e5.chunk.js.LICENSE.txt": "/typescript-rocks-frontend/static/js/2.26d730e5.chunk.js.LICENSE.txt",
     "static/media/BuildTheLanes.png": "/typescript-rocks-frontend/static/media/BuildTheLanes.4910d33c.png",
+    "static/media/DesignerWebs.png": "/typescript-rocks-frontend/static/media/DesignerWebs.85175369.png",
     "static/media/Duplicagent.png": "/typescript-rocks-frontend/static/media/Duplicagent.a4d612d0.png",
-    "static/media/logo.svg": "/typescript-rocks-frontend/static/media/logo.5d5d9eef.svg"
+    "static/media/foundation.png": "/typescript-rocks-frontend/static/media/foundation.bc3dcf00.png",
+    "static/media/javascript-academy.png": "/typescript-rocks-frontend/static/media/javascript-academy.bb106cfd.png",
+    "static/media/logo.svg": "/typescript-rocks-frontend/static/media/logo.5d5d9eef.svg",
+    "static/media/reactive-nerd.png": "/typescript-rocks-frontend/static/media/reactive-nerd.1c609496.png",
+    "static/media/solar-leads.png": "/typescript-rocks-frontend/static/media/solar-leads.5d34e460.png"
   },
   "entrypoints": [
     "static/js/runtime-main.e41478c4.js",
-    "static/js/2.81909354.chunk.js",
+    "static/js/2.26d730e5.chunk.js",
     "static/css/main.abf36e19.chunk.css",
-    "static/js/main.5eb61bb4.chunk.js"
+    "static/js/main.55de9c19.chunk.js"
   ]
 }
