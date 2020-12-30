@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/typescript-rocks-frontend/static/css/main.abf36e19.chunk.css",
-    "main.js": "/typescript-rocks-frontend/static/js/main.55de9c19.chunk.js",
-    "main.js.map": "/typescript-rocks-frontend/static/js/main.55de9c19.chunk.js.map",
+    "main.js": "/typescript-rocks-frontend/static/js/main.7f9573d8.chunk.js",
+    "main.js.map": "/typescript-rocks-frontend/static/js/main.7f9573d8.chunk.js.map",
     "runtime-main.js": "/typescript-rocks-frontend/static/js/runtime-main.e41478c4.js",
     "runtime-main.js.map": "/typescript-rocks-frontend/static/js/runtime-main.e41478c4.js.map",
     "static/js/2.26d730e5.chunk.js": "/typescript-rocks-frontend/static/js/2.26d730e5.chunk.js",
     "static/js/2.26d730e5.chunk.js.map": "/typescript-rocks-frontend/static/js/2.26d730e5.chunk.js.map",
     "index.html": "/typescript-rocks-frontend/index.html",
-    "precache-manifest.03451fc4c0a21fadbf8904db75837174.js": "/typescript-rocks-frontend/precache-manifest.03451fc4c0a21fadbf8904db75837174.js",
+    "precache-manifest.229b27d360ffa82dc5e4b3f8b70975b1.js": "/typescript-rocks-frontend/precache-manifest.229b27d360ffa82dc5e4b3f8b70975b1.js",
     "service-worker.js": "/typescript-rocks-frontend/service-worker.js",
     "static/css/main.abf36e19.chunk.css.map": "/typescript-rocks-frontend/static/css/main.abf36e19.chunk.css.map",
     "static/js/2.26d730e5.chunk.js.LICENSE.txt": "/typescript-rocks-frontend/static/js/2.26d730e5.chunk.js.LICENSE.txt",
@@ -25,6 +25,6 @@
     "static/js/runtime-main.e41478c4.js",
     "static/js/2.26d730e5.chunk.js",
     "static/css/main.abf36e19.chunk.css",
-    "static/js/main.55de9c19.chunk.js"
+    "static/js/main.7f9573d8.chunk.js"
   ]
 }
