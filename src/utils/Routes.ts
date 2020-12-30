@@ -14,7 +14,7 @@ import SettingsIcon from '@material-ui/icons/Settings';
 
 export const internalLandingRoutes = [{
     name: 'Home',
-    route:'/Home',
+    route:'/',
     view: Home,
     icon: HomeIcon,
 },{
