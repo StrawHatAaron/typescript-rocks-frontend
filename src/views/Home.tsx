@@ -47,43 +47,43 @@ function Home() {
             <Grid item xs container direction="column" spacing={2}>
               <Grid item xs>
                 <Typography gutterBottom variant="subtitle1">
-                  Hi, I am Aaron
+                  Aaron Miller
                 </Typography>
                 <Typography variant="body2" gutterBottom>
-                  Welcome to my Website♡
+                  NOC Associate and Software Developer
                 </Typography>
                 <Typography variant="body2" color="textSecondary">
-                  Last Update: Jun 1. 2020
+                  Bachelors in Computer Science
                 </Typography>
               </Grid>
               <Grid item>
                 <Typography variant="body2" style={{ cursor: 'pointer' }}>
-                  Here are some things I like: 💻☕️🥑
+                  
                 </Typography>
               </Grid>
-            </Grid>
-            <Grid item>
-              <Typography variant="subtitle1">🌎🌍🌏</Typography>
             </Grid>
           </Grid>
         </Grid>
       </Paper>
-        One of my favorite hobbies is writing Web Apps. My favorite frontend framework is by far React. 
-        I am working on launching some of my full stack apps I have built over the years. I have tried
-        many backend frameworks and I must say the more I try the easier they all get. Right now I have 
-        been learning .NET Core but I would like to get back into Java or pickup Go Lang. In about 6 
-        months I will be graduating from CSU Sacramento!
-      <Grid className={classes.gridIam} container spacing={3}>
-        <Grid item xs={12} sm={6}>
-          <Paper className={classes.paper}>50% Software Developer</Paper>
-        </Grid>
-        <Grid item xs={12} sm={6}>
-          <Paper className={classes.paper}>50% Network Analyst</Paper>
-        </Grid>
-        <Grid item xs={12}>
-          <Paper className={classes.paper}>100% Human</Paper>
-        </Grid>
-      </Grid>
+     
+      <Paper className={classes.paper}> 
+        <Typography>Software Engineering</Typography>
+        <ul>
+          <li>Typescript/Javascript frontend development</li>
+          <li>C#/Python backend development</li>
+        </ul>
+        <Typography>NOC Associate</Typography>
+        <ul>
+          <li>InterMapper for monitoring network health</li>
+          <li>SCOM/Solarwinds/Mainframe/IronPort system health</li>
+          <li>Investigate for potential outage impacts</li>
+        </ul>  
+        <Typography>DevOps</Typography>
+        <ul>
+          <li>TravisCI for continuous integration with Git</li>
+          <li>Docker containerization</li>
+        </ul>  
+      </Paper>
     </div>
   );
 }

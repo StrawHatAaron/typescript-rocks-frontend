@@ -54,7 +54,7 @@ export const Contact: React.FC<{}> = () => {
 
   return(
   <div className={classes.root}>
-    <Typography variant="h3">Contact Me!</Typography>
+    <Typography variant="h3">Send me an email</Typography>
     <Card className={classes.card}>
     <CardContent className={classes.cardContent}>
       <div className="glasses-container">
@@ -114,7 +114,7 @@ export const Contact: React.FC<{}> = () => {
       </CardActions>
     </Card>
     <br/>
-  <Typography><TypescriptIcon/>, <br/> Don't be afraid 🏔🏳️‍🌈 </Typography>
+  <Typography><TypescriptIcon/> </Typography>
   </div>
   )
 };
