@@ -11,31 +11,31 @@ import GitHubIcon from '@material-ui/icons/GitHub';
 import BookIcon from '@material-ui/icons/Book';
 import SettingsIcon from '@material-ui/icons/Settings';
 
-const baseRoute = "/typescript-rocks-frontend/";
+const baseRoute = "/";
 
 export const internalLandingRoutes = [{
     name: 'Home',
-    route:baseRoute+'/',
+    route:baseRoute+'',
     view: Home,
     icon: HomeIcon,
 },{
     name: 'Portfolio',
-    route:baseRoute+'/Portfolio',
+    route:baseRoute+'Portfolio',
     view: Portfolio,
     icon: AssignmentIcon,
 },{
     name: 'Contact',
-    route:baseRoute+'/Contact',
+    route:baseRoute+'Contact',
     view: Contact,
     icon: MailIcon,
 },{
     name: 'Blog',
-    route:baseRoute+'/Blog',
+    route:baseRoute+'Blog',
     view: Blog,
     icon: BookIcon,
 },{
     name:'Settings',
-    route:baseRoute+'/Settings',
+    route:baseRoute+'Settings',
     view:Settings,
     icon:SettingsIcon
 }];
