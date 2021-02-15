@@ -1,30 +1,30 @@
 {
   "files": {
-    "main.css": "/typescript-rocks-frontend/static/css/main.abf36e19.chunk.css",
-    "main.js": "/typescript-rocks-frontend/static/js/main.dc285307.chunk.js",
-    "main.js.map": "/typescript-rocks-frontend/static/js/main.dc285307.chunk.js.map",
-    "runtime-main.js": "/typescript-rocks-frontend/static/js/runtime-main.e41478c4.js",
-    "runtime-main.js.map": "/typescript-rocks-frontend/static/js/runtime-main.e41478c4.js.map",
-    "static/js/2.26d730e5.chunk.js": "/typescript-rocks-frontend/static/js/2.26d730e5.chunk.js",
-    "static/js/2.26d730e5.chunk.js.map": "/typescript-rocks-frontend/static/js/2.26d730e5.chunk.js.map",
-    "index.html": "/typescript-rocks-frontend/index.html",
-    "precache-manifest.498360e208be6dc46c0696f7c5238eeb.js": "/typescript-rocks-frontend/precache-manifest.498360e208be6dc46c0696f7c5238eeb.js",
-    "service-worker.js": "/typescript-rocks-frontend/service-worker.js",
-    "static/css/main.abf36e19.chunk.css.map": "/typescript-rocks-frontend/static/css/main.abf36e19.chunk.css.map",
-    "static/js/2.26d730e5.chunk.js.LICENSE.txt": "/typescript-rocks-frontend/static/js/2.26d730e5.chunk.js.LICENSE.txt",
-    "static/media/BuildTheLanes.png": "/typescript-rocks-frontend/static/media/BuildTheLanes.4910d33c.png",
-    "static/media/DesignerWebs.png": "/typescript-rocks-frontend/static/media/DesignerWebs.85175369.png",
-    "static/media/Duplicagent.png": "/typescript-rocks-frontend/static/media/Duplicagent.a4d612d0.png",
-    "static/media/foundation.png": "/typescript-rocks-frontend/static/media/foundation.bc3dcf00.png",
-    "static/media/javascript-academy.png": "/typescript-rocks-frontend/static/media/javascript-academy.bb106cfd.png",
-    "static/media/logo.svg": "/typescript-rocks-frontend/static/media/logo.5d5d9eef.svg",
-    "static/media/reactive-nerd.png": "/typescript-rocks-frontend/static/media/reactive-nerd.1c609496.png",
-    "static/media/solar-leads.png": "/typescript-rocks-frontend/static/media/solar-leads.5d34e460.png"
+    "main.css": "/static/css/main.abf36e19.chunk.css",
+    "main.js": "/static/js/main.b0bcec75.chunk.js",
+    "main.js.map": "/static/js/main.b0bcec75.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.e1a79144.js",
+    "runtime-main.js.map": "/static/js/runtime-main.e1a79144.js.map",
+    "static/js/2.26d730e5.chunk.js": "/static/js/2.26d730e5.chunk.js",
+    "static/js/2.26d730e5.chunk.js.map": "/static/js/2.26d730e5.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.a872220e781654e71c7b16909a28ac73.js": "/precache-manifest.a872220e781654e71c7b16909a28ac73.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.abf36e19.chunk.css.map": "/static/css/main.abf36e19.chunk.css.map",
+    "static/js/2.26d730e5.chunk.js.LICENSE.txt": "/static/js/2.26d730e5.chunk.js.LICENSE.txt",
+    "static/media/BuildTheLanes.png": "/static/media/BuildTheLanes.4910d33c.png",
+    "static/media/DesignerWebs.png": "/static/media/DesignerWebs.85175369.png",
+    "static/media/Duplicagent.png": "/static/media/Duplicagent.a4d612d0.png",
+    "static/media/foundation.png": "/static/media/foundation.bc3dcf00.png",
+    "static/media/javascript-academy.png": "/static/media/javascript-academy.bb106cfd.png",
+    "static/media/logo.svg": "/static/media/logo.5d5d9eef.svg",
+    "static/media/reactive-nerd.png": "/static/media/reactive-nerd.1c609496.png",
+    "static/media/solar-leads.png": "/static/media/solar-leads.5d34e460.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.e41478c4.js",
+    "static/js/runtime-main.e1a79144.js",
     "static/js/2.26d730e5.chunk.js",
     "static/css/main.abf36e19.chunk.css",
-    "static/js/main.dc285307.chunk.js"
+    "static/js/main.b0bcec75.chunk.js"
   ]
 }
