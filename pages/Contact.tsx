@@ -9,8 +9,7 @@ import {
 } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 import TypescriptIcon from "../assets/mui/TypescriptIcon";
-import ReactLogo from "../logo.svg";
-import "../assets/css/Sunglasses.css";
+import ReactLogo from "../public/logo.svg";
 
 const useStyles = makeStyles({
   root: {

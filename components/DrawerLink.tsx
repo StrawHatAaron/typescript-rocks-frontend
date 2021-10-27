@@ -28,15 +28,15 @@ export const DrawerLink: React.FC<DrawerLinkProps> = ({
   const classes = useDrawerLink();
   if (internal) {
     return (
-      <Link to={route} className={classes.drawerLink}>
-        <ListItem button>
-          <ListItemIcon>{icon}</ListItemIcon>
-          <ListItemText
-            primaryTypographyProps={{ color: "textSecondary" }}
-            primary={name}
-          />
-        </ListItem>
-      </Link>
+      // <Link to={route} className={classes.drawerLink}>
+      <ListItem button>
+        <ListItemIcon>{icon}</ListItemIcon>
+        <ListItemText
+          primaryTypographyProps={{ color: "textSecondary" }}
+          primary={name}
+        />
+      </ListItem>
+      //</Link>
     );
   } else {
     return (

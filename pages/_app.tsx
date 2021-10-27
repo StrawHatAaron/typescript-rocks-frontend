@@ -2,6 +2,8 @@ import React from "react";
 import { Route } from "react-router-dom";
 import { createStyles, makeStyles, Theme } from "@material-ui/core/styles";
 import Layout from "components/Layout";
+import Head from "next/head";
+import "../assets/css/Sunglasses.css";
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
@@ -23,17 +25,23 @@ const useStyles = makeStyles((theme: Theme) =>
   })
 );
 
-const MyApp = () => {
+function MyApp({ Component, pageProps }: any) {
   const classes = useStyles();
 
   return (
     <div className={classes.root}>
-      <Layout />
+      <Head>
+        <title>Quasar EE</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      </Head>
+      <Layout>
+        <Component {...pageProps} />
+      </Layout>
       <main className={classes.content}>
         <div className={classes.toolbar} />
       </main>
     </div>
   );
-};
+}
 
 export default MyApp;
