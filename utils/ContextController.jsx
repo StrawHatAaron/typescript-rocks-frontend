@@ -1,11 +1,7 @@
 import React from "react";
-import ReactDOM from "react-dom";
-import { BrowserRouter as Router } from "react-router-dom";
 import { ThemeProvider, createTheme } from "@material-ui/core/styles";
 // import useMediaQuery from '@material-ui/core/useMediaQuery';
-import { ThemeContext } from "./utils/Context";
-import App from "./App";
-import * as serviceWorker from "./serviceWorker";
+import { ThemeContext } from "./Context";
 
 import {
   lightPrimary,
@@ -13,9 +9,9 @@ import {
   darkPrimary,
   darkSecondary,
   themes,
-} from "./utils/themes";
+} from "./themes";
 
-class Index extends React.Component {
+export default class ContextController extends React.Component {
   constructor(props) {
     super(props);
 
@@ -76,16 +72,14 @@ class Index extends React.Component {
     };
   }
 
-  render() {
+  render(children) {
     return (
       <React.StrictMode>
         <ThemeContext.Provider value={this.state}>
           <ThemeContext.Consumer>
             {({ themeObject }) => (
               <ThemeProvider theme={createTheme(themeObject)}>
-                <Router>
-                  <App />
-                </Router>
+                {children}
               </ThemeProvider>
             )}
           </ThemeContext.Consumer>
@@ -94,11 +88,3 @@ class Index extends React.Component {
     );
   }
 }
-
-//Last Entry Point for The entire App
-ReactDOM.render(<Index />, document.getElementById("root"));
-
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();

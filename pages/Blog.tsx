@@ -1,18 +1,16 @@
 /* eslint-disable no-nested-ternary */
-import React from 'react';
-import { makeStyles, Theme, createStyles } from '@material-ui/core/styles';
-import List from '@material-ui/core/List';
-import Link, { LinkProps } from '@material-ui/core/Link';
-import ListItem from '@material-ui/core/ListItem';
-import Collapse from '@material-ui/core/Collapse';
-import ListItemText from '@material-ui/core/ListItemText';
-import Typography from '@material-ui/core/Typography';
-import ExpandLess from '@material-ui/icons/ExpandLess';
-import ExpandMore from '@material-ui/icons/ExpandMore';
-import Breadcrumbs from '@material-ui/core/Breadcrumbs';
-import { Route, MemoryRouter } from 'react-router';
-import { Link as RouterLink } from 'react-router-dom';
-import { Omit } from '@material-ui/types';
+import React from "react";
+import { makeStyles, Theme, createStyles } from "@material-ui/core/styles";
+import List from "@material-ui/core/List";
+import Link, { LinkProps } from "@material-ui/core/Link";
+import ListItem from "@material-ui/core/ListItem";
+import Collapse from "@material-ui/core/Collapse";
+import ListItemText from "@material-ui/core/ListItemText";
+import Typography from "@material-ui/core/Typography";
+import ExpandLess from "@material-ui/icons/ExpandLess";
+import ExpandMore from "@material-ui/icons/ExpandMore";
+import Breadcrumbs from "@material-ui/core/Breadcrumbs";
+import { Omit } from "@material-ui/types";
 
 interface ListItemLinkProps extends LinkProps {
   to: string;
@@ -26,25 +24,23 @@ interface ListItemLinkProps extends LinkProps {
 // },{
 //     thisMonth :'/thisMonth'
 // }];
-const all = '/all';
-const recent = '/recent';
-const frontend = '/frontend';
-const backend = '/backend';
-const database = '/database';
-const beginner = '/beginner'
-
-
+const all = "/all";
+const recent = "/recent";
+const frontend = "/frontend";
+const backend = "/backend";
+const database = "/database";
+const beginner = "/beginner";
 
 const breadcrumbNameMap: { [key: string]: string } = {
-  [`${all}`]: 'All',
-  [`${all}${recent}`]: 'Recent',
-  [`${frontend}`]: 'Frontend',
-  [`${backend}`]: 'Backend',
-  [`${database}`]: 'Database',
-  [`${beginner}`]: 'Beginner',
+  [`${all}`]: "All",
+  [`${all}${recent}`]: "Recent",
+  [`${frontend}`]: "Frontend",
+  [`${backend}`]: "Backend",
+  [`${database}`]: "Database",
+  [`${beginner}`]: "Beginner",
 };
 
-function ListItemLink(props: Omit<ListItemLinkProps, 'ref'>) {
+function ListItemLink(props: Omit<ListItemLinkProps, "ref">) {
   const { to, open, ...other } = props;
   const primary = breadcrumbNameMap[to];
 
@@ -61,8 +57,8 @@ function ListItemLink(props: Omit<ListItemLinkProps, 'ref'>) {
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
     root: {
-      display: 'flex',
-      flexDirection: 'column',
+      display: "flex",
+      flexDirection: "column",
       width: 360,
     },
     lists: {
@@ -72,7 +68,7 @@ const useStyles = makeStyles((theme: Theme) =>
     nested: {
       paddingLeft: theme.spacing(4),
     },
-  }),
+  })
 );
 
 interface LinkRouterProps extends LinkProps {
@@ -80,7 +76,9 @@ interface LinkRouterProps extends LinkProps {
   replace?: boolean;
 }
 
-const LinkRouter = (props: LinkRouterProps) => <Link {...props} component={RouterLink as any} />;
+const LinkRouter = (props: LinkRouterProps) => (
+  <Link {...props} component={RouterLink as any} />
+);
 
 export default function Blog() {
   const classes = useStyles();
@@ -91,15 +89,15 @@ export default function Blog() {
   };
 
   return (
-    <MemoryRouter initialEntries={['/all']} initialIndex={0}>
+    <MemoryRouter initialEntries={["/all"]} initialIndex={0}>
       <div className={classes.root}>
         <Route>
           {({ location }) => {
-            const pathnames = location.pathname.split('/').filter((x) => x);
+            const pathnames = location.pathname.split("/").filter((x) => x);
 
             return (
               <Breadcrumbs aria-label="breadcrumb">
-                <LinkRouter color="inherit" to="/">
+                {/* <LinkRouter color="inherit" to="/">
                   Blog
                 </LinkRouter>
                 {pathnames.map((value, index) => {
@@ -115,7 +113,7 @@ export default function Blog() {
                       {breadcrumbNameMap[to]}
                     </LinkRouter>
                   );
-                })}
+                })} */}
               </Breadcrumbs>
             );
           }}
@@ -125,7 +123,7 @@ export default function Blog() {
             <ListItemLink to="/all" open={open} onClick={handleClick} />
             <Collapse component="li" in={open} timeout="auto" unmountOnExit>
               <List disablePadding>
-                <ListItemLink to={all+recent} className={classes.nested} />
+                <ListItemLink to={all + recent} className={classes.nested} />
               </List>
             </Collapse>
             <ListItemLink to={frontend} />

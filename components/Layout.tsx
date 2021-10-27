@@ -22,7 +22,6 @@ import TypeScriptIcon from "../assets/mui/TypescriptIcon";
 //aaron
 import { internalLandingRoutes, externalLandingRoutes } from "../utils/Routes";
 import { DrawerLink } from "./DrawerLink";
-//i think it would be natural for this file to handle a lot of the routing and linking
 
 const drawerWidth = 240;
 
@@ -90,7 +89,7 @@ const useStyles = makeStyles((theme: Theme) =>
 export default function Layout({ children }: any) {
   const classes = useStyles();
   const theme = useTheme();
-  const [open, setOpen] = React.useState(false);
+  const [open, setOpen] = React.useState(true);
 
   const handleDrawerOpen = () => {
     setOpen(true);

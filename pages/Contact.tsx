@@ -40,7 +40,7 @@ type EmailMessage = {
   message: string;
 };
 
-export const Contact: React.FC<{}> = () => {
+export default function Contact() {
   const classes = useStyles();
 
   const [state, setState] = useState<EmailMessage>({
@@ -125,4 +125,4 @@ export const Contact: React.FC<{}> = () => {
       </Typography>
     </div>
   );
-};
+}

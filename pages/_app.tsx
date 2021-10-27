@@ -1,9 +1,9 @@
 import React from "react";
-import { Route } from "react-router-dom";
 import { createStyles, makeStyles, Theme } from "@material-ui/core/styles";
 import Layout from "components/Layout";
 import Head from "next/head";
 import "../assets/css/Sunglasses.css";
+import ContextController from "../utils/ContextController";
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
@@ -34,12 +34,14 @@ function MyApp({ Component, pageProps }: any) {
         <title>Quasar EE</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Head>
+      {/* <ContextController> */}
       <Layout>
-        <Component {...pageProps} />
+        <main className={classes.content}>
+          <div className={classes.toolbar} />
+          <Component {...pageProps} />
+        </main>
       </Layout>
-      <main className={classes.content}>
-        <div className={classes.toolbar} />
-      </main>
+      {/* </ContextController> */}
     </div>
   );
 }
