@@ -1,44 +1,9 @@
 import React, { useState, useRef } from "react";
-import {
-  Card,
-  Button,
-  TextField,
-  Typography,
-  CardContent,
-  CardActions,
-} from "@material-ui/core";
-import { Theme, makeStyles } from "@material-ui/core/styles";
-import TypescriptIcon from "../assets/mui/TypescriptIcon";
 import ReactLogo from "../logo.svg";
 import "../assets/css/Sunglasses.css";
 import emailjs from "emailjs-com";
 
-const useStyles = makeStyles({
-  root: {
-    maxWidth: 650,
-    margin: "auto",
-  },
-  card: {
-    display: "flex",
-    alignItems: "center",
-    justifyContent: "center",
-    // flexDirection:'row-reverse'
-  },
-  cardContent: {
-    flex: 1,
-  },
-  textField: {
-    margin: "1em",
-  },
-  button: {
-    display: "block",
-    margin: "auto",
-  },
-});
-
 export const Contact = () => {
-  const classes = useStyles();
-
   const form = useRef();
 
   function sendEmail(e) {
@@ -55,7 +20,9 @@ export const Contact = () => {
       )
       .then(
         (result) => {
-          console.log(result.text);
+          alert(
+            "Email sent successfully. Please check your email for confirmation."
+          );
         },
         (error) => {
           console.log(error.text);
@@ -82,50 +49,27 @@ export const Contact = () => {
       </div>
 
       <div className="container">
-        <form onSubmit={sendEmail}>
-          <div className="row pt-5 mx-auto">
-            <div className="col-8 form-group mx-auto">
-              <input
-                type="text"
-                className="form-control"
-                placeholder="Name"
-                name="name"
-              />
-            </div>
-            <div className="col-8 form-group pt-2 mx-auto">
-              <input
-                type="email"
-                className="form-control"
-                placeholder="Email Address"
-                name="email"
-              />
-            </div>
-            <div className="col-8 form-group pt-2 mx-auto">
-              <input
-                type="text"
-                className="form-control"
-                placeholder="Subject"
-                name="subject"
-              />
-            </div>
-            <div className="col-8 form-group pt-2 mx-auto">
-              <textarea
-                className="form-control"
-                id=""
-                cols="30"
-                rows="8"
-                placeholder="Your message"
-                name="message"
-              ></textarea>
-            </div>
-            <div className="col-8 pt-3 mx-auto">
-              <input
-                type="submit"
-                className="btn btn-info"
-                value="Send Message"
-              ></input>
-            </div>
-          </div>
+        <form ref={form} onSubmit={sendEmail}>
+          <input type="text" placeholder="Name" name="name" />
+          <br />
+          <input type="email" placeholder="Email Address" name="email" />
+          <br />
+          <input type="text" placeholder="Subject" name="subject" />
+          <br />
+          <textarea
+            className="form-control"
+            id=""
+            cols="30"
+            rows="8"
+            placeholder="Your message"
+            name="message"
+          ></textarea>
+          <br />
+          <input
+            type="submit"
+            className="btn btn-info"
+            value="Send Message"
+          ></input>
         </form>
       </div>
     </div>

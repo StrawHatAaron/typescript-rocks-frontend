@@ -1,22 +1,21 @@
-import React from 'react';
-import {Route,} from 'react-router-dom';
+import React from "react";
+import { Route } from "react-router-dom";
 //material ui
-import { createStyles, makeStyles, Theme} from '@material-ui/core/styles';
+import { createStyles, makeStyles, Theme } from "@material-ui/core/styles";
 //aaron
-import {internalLandingRoutes, } from './utils/Routes';
-import AppBarDrawer from './components/AppBarDrawer'
-//i think it would be natural for this file to handle a lot of the routing and linking 
-
+import { internalLandingRoutes } from "./utils/Routes";
+import AppBarDrawer from "./components/AppBarDrawer";
+//i think it would be natural for this file to handle a lot of the routing and linking
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
     root: {
-      display: 'flex',
+      display: "flex",
     },
     toolbar: {
-      display: 'flex',
-      alignItems: 'center',
-      justifyContent: 'flex-end',
+      display: "flex",
+      alignItems: "center",
+      justifyContent: "flex-end",
       padding: theme.spacing(0, 1),
       // necessary for content to be below app bar
       ...theme.mixins.toolbar,
@@ -25,7 +24,7 @@ const useStyles = makeStyles((theme: Theme) =>
       flexGrow: 1,
       padding: theme.spacing(3),
     },
-  }),
+  })
 );
 
 const App = () => {
@@ -33,19 +32,20 @@ const App = () => {
 
   return (
     <div className={classes.root}>
-      <AppBarDrawer/>
+      <AppBarDrawer />
       <main className={classes.content}>
-        <div className={classes.toolbar}/>
+        <div className={classes.toolbar} />
         {internalLandingRoutes.map((c) => (
-           <Route
-            key={c.route+"landing-pages-routes"}
-            exact path={c.route}
+          <Route
+            key={c.route + "landing-pages-routes"}
+            exact
+            path={c.route}
             component={c.view}
-          /> 
+          />
         ))}
       </main>
     </div>
   );
-}
+};
 
-export default App
+export default App;
