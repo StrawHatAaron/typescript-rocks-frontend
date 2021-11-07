@@ -1,4 +1,4 @@
-import React, { useState, useRef } from "react";
+import React, { useRef } from "react";
 import ReactLogo from "../logo.svg";
 import "../assets/css/Sunglasses.css";
 import emailjs from "emailjs-com";
@@ -11,7 +11,7 @@ import {
   CardContent,
   CardActions,
 } from "@material-ui/core";
-import { Theme, makeStyles } from "@material-ui/core/styles";
+import { makeStyles } from "@material-ui/core/styles";
 import TypescriptIcon from "../assets/mui/TypescriptIcon";
 
 const useStyles = makeStyles({
@@ -45,55 +45,58 @@ export const Contact = () => {
   function sendEmail(e) {
     e.preventDefault();
 
-    e.preventDefault();
+    console.log(form);
+    console.log(form.current[0].value);
 
-    emailjs
-      .sendForm(
-        "service_1c7xf2v",
-        "template_3f1eh49",
-        form.current,
-        "user_T2BzmJ5JGH1ArbLs4gfSV"
-      )
-      .then(
-        (result) => {
-          alert(
-            "Email sent successfully. Please check your email for confirmation."
-          );
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
-    // e.target.reset();
+    console.log(form.current[2].value);
+
+    console.log(form.current[4].value);
+
+    console.log(form.current[6].value);
+
+    if (
+      form.current[0].value === "" ||
+      form.current[2].value === "" ||
+      form.current[4].value === "" ||
+      form.current[6].value === ""
+    ) {
+      alert("Make sure that ALL fields are filled out to send.");
+    } else if (!validateEmail(form.current[2].value)) {
+      alert("Data entered for email is NOT a valid email.");
+    } else {
+      emailjs
+        .sendForm(
+          "service_1c7xf2v",
+          "template_3f1eh49",
+          form.current,
+          "user_T2BzmJ5JGH1ArbLs4gfSV"
+        )
+        .then(
+          (result) => {
+            alert(
+              "Email sent successfully. Please check your email for confirmation."
+            );
+            form.current[0].value = "";
+            form.current[2].value = "";
+            form.current[4].value = "";
+            form.current[6].value = "";
+          },
+          (error) => {
+            console.log(error.text);
+          }
+        );
+    }
+  }
+
+  function validateEmail(email) {
+    const re =
+      /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    return re.test(email);
   }
 
   return (
     <div>
       <h3>Send me an email</h3>
-      {/* 
-      <div className="container">
-        <form ref={form} onSubmit={sendEmail}>
-          <input type="text" placeholder="Name" name="name" />
-          <br />
-          <input type="email" placeholder="Email Address" name="email" />
-          <br />
-          <input type="text" placeholder="Subject" name="subject" />
-          <br />
-          <textarea
-            id=""
-            cols="30"
-            rows="8"
-            placeholder="Your message"
-            name="message"
-          ></textarea>
-          <br />
-          <input
-            type="submit"
-            className="btn btn-info"
-            value="Send Message"
-          ></input>
-        </form>
-      </div> */}
 
       {/* my goal is below */}
       <div className={classes.root}>
@@ -116,31 +119,33 @@ export const Contact = () => {
               <TextField
                 className={classes.textField}
                 id="outlined-required"
-                label="Name"
+                label="*Name"
                 name="name"
                 variant="outlined"
                 fullWidth
               />
-              <br />
+
               <TextField
                 className={classes.textField}
                 id="outlined-required"
-                label="Email"
+                label="*Email"
                 name="email"
                 variant="outlined"
                 fullWidth
               />
-              <br />
+
               <TextField
                 className={classes.textField}
-                label="Subject"
+                id="outlined-required"
+                label="*Subject"
                 name="subject"
                 variant="outlined"
                 fullWidth
               />
               <TextField
                 className={classes.textField}
-                label="Message"
+                id="outlined-required"
+                label="*Message"
                 name="message"
                 variant="outlined"
                 fullWidth
