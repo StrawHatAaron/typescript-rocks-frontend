@@ -44,16 +44,6 @@ export const Contact = () => {
 
   function sendEmail(e) {
     e.preventDefault();
-
-    console.log(form);
-    console.log(form.current[0].value);
-
-    console.log(form.current[2].value);
-
-    console.log(form.current[4].value);
-
-    console.log(form.current[6].value);
-
     if (
       form.current[0].value === "" ||
       form.current[2].value === "" ||
@@ -96,9 +86,6 @@ export const Contact = () => {
 
   return (
     <div>
-      <h3>Send me an email</h3>
-
-      {/* my goal is below */}
       <div className={classes.root}>
         <Typography variant="h3">Send me an email</Typography>
         <Card className={classes.card}>
