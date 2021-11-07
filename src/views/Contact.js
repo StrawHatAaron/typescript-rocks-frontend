@@ -66,7 +66,7 @@ export const Contact = () => {
 
   return (
     <div>
-      <Typography variant="h3">Send me an email</Typography>
+      <h3>Send me an email</h3>
 
       <div className="glasses-container">
         <div className="glasses">
