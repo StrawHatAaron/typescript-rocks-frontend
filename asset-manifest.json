@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/typescript-rocks-frontend/static/css/main.abf36e19.chunk.css",
-    "main.js": "/typescript-rocks-frontend/static/js/main.f84cc749.chunk.js",
-    "main.js.map": "/typescript-rocks-frontend/static/js/main.f84cc749.chunk.js.map",
+    "main.js": "/typescript-rocks-frontend/static/js/main.4c67c427.chunk.js",
+    "main.js.map": "/typescript-rocks-frontend/static/js/main.4c67c427.chunk.js.map",
     "runtime-main.js": "/typescript-rocks-frontend/static/js/runtime-main.e41478c4.js",
     "runtime-main.js.map": "/typescript-rocks-frontend/static/js/runtime-main.e41478c4.js.map",
-    "static/js/2.cc0de0d7.chunk.js": "/typescript-rocks-frontend/static/js/2.cc0de0d7.chunk.js",
-    "static/js/2.cc0de0d7.chunk.js.map": "/typescript-rocks-frontend/static/js/2.cc0de0d7.chunk.js.map",
+    "static/js/2.c0b9af19.chunk.js": "/typescript-rocks-frontend/static/js/2.c0b9af19.chunk.js",
+    "static/js/2.c0b9af19.chunk.js.map": "/typescript-rocks-frontend/static/js/2.c0b9af19.chunk.js.map",
     "index.html": "/typescript-rocks-frontend/index.html",
-    "precache-manifest.94bdff354763e3f1defefa37281d8fc9.js": "/typescript-rocks-frontend/precache-manifest.94bdff354763e3f1defefa37281d8fc9.js",
+    "precache-manifest.8606656b10d70fb8e4796cf743685df1.js": "/typescript-rocks-frontend/precache-manifest.8606656b10d70fb8e4796cf743685df1.js",
     "service-worker.js": "/typescript-rocks-frontend/service-worker.js",
     "static/css/main.abf36e19.chunk.css.map": "/typescript-rocks-frontend/static/css/main.abf36e19.chunk.css.map",
-    "static/js/2.cc0de0d7.chunk.js.LICENSE.txt": "/typescript-rocks-frontend/static/js/2.cc0de0d7.chunk.js.LICENSE.txt",
+    "static/js/2.c0b9af19.chunk.js.LICENSE.txt": "/typescript-rocks-frontend/static/js/2.c0b9af19.chunk.js.LICENSE.txt",
     "static/media/BuildTheLanes.png": "/typescript-rocks-frontend/static/media/BuildTheLanes.4910d33c.png",
     "static/media/DesignerWebs.png": "/typescript-rocks-frontend/static/media/DesignerWebs.85175369.png",
     "static/media/Duplicagent.png": "/typescript-rocks-frontend/static/media/Duplicagent.a4d612d0.png",
@@ -24,8 +24,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.e41478c4.js",
-    "static/js/2.cc0de0d7.chunk.js",
+    "static/js/2.c0b9af19.chunk.js",
     "static/css/main.abf36e19.chunk.css",
-    "static/js/main.f84cc749.chunk.js"
+    "static/js/main.4c67c427.chunk.js"
   ]
 }
