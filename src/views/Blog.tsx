@@ -100,7 +100,7 @@ export default function Blog() {
     <MemoryRouter initialEntries={["/all"]} initialIndex={0}>
       <h1>
         Why write a full stack CMS when you can use WordPress and make more
-        unique things?{" "}
+        unique things?
       </h1>
       <img
         className={classes.img}
