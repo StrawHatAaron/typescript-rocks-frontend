@@ -28,6 +28,13 @@ const useStyles = makeStyles((theme: Theme) =>
 function MyApp({ Component, pageProps }: any) {
   const classes = useStyles();
 
+  React.useEffect(() => {
+    const jssStyles = document.querySelector("#jss-server-side");
+    if (jssStyles) {
+      jssStyles.parentElement.removeChild(jssStyles);
+    }
+  }, []);
+
   return (
     <div className={classes.root}>
       <Head>
