@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "c212241f551c48547bb6aed443ba7828",
+    "revision": "f08a3d1dbda788b992a8885f1a525043",
     "url": "/typescript-rocks-frontend/index.html"
   },
   {
-    "revision": "68389f59ba1295528bf4",
-    "url": "/typescript-rocks-frontend/static/css/main.abf36e19.chunk.css"
+    "revision": "c7eecece48bdca06c0f8",
+    "url": "/typescript-rocks-frontend/static/css/main.6477327a.chunk.css"
   },
   {
-    "revision": "e479955e11c09b5f0e97",
-    "url": "/typescript-rocks-frontend/static/js/2.c0b9af19.chunk.js"
+    "revision": "8ee1bcd93892242ec033",
+    "url": "/typescript-rocks-frontend/static/js/2.8eb9b5b2.chunk.js"
   },
   {
     "revision": "0749163b59fbee32225059cb60c18af6",
-    "url": "/typescript-rocks-frontend/static/js/2.c0b9af19.chunk.js.LICENSE.txt"
+    "url": "/typescript-rocks-frontend/static/js/2.8eb9b5b2.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "68389f59ba1295528bf4",
-    "url": "/typescript-rocks-frontend/static/js/main.d2051dbf.chunk.js"
+    "revision": "c7eecece48bdca06c0f8",
+    "url": "/typescript-rocks-frontend/static/js/main.16fc552c.chunk.js"
   },
   {
     "revision": "4642bac29c7693b2ea7e",
