@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "f08a3d1dbda788b992a8885f1a525043",
+    "revision": "2f1edfe19b1bc8ed83438740f3bc1d36",
     "url": "/typescript-rocks-frontend/index.html"
   },
   {
-    "revision": "c7eecece48bdca06c0f8",
+    "revision": "17fa2088a8dc3e6ff45d",
     "url": "/typescript-rocks-frontend/static/css/main.6477327a.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/typescript-rocks-frontend/static/js/2.8eb9b5b2.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "c7eecece48bdca06c0f8",
-    "url": "/typescript-rocks-frontend/static/js/main.16fc552c.chunk.js"
+    "revision": "17fa2088a8dc3e6ff45d",
+    "url": "/typescript-rocks-frontend/static/js/main.cb100d19.chunk.js"
   },
   {
     "revision": "4642bac29c7693b2ea7e",
