@@ -20,7 +20,6 @@ import tCheckImage from "../assets/img/tCheck.png";
 import BuildTheLanesImage from "../assets/img/BuildTheLanes.png";
 import QuasarElectronicsImage from "../assets/img/quasar-ee.png";
 import DuplicagentImage from "../assets/img/Duplicagent.png";
-import SolarLeadGeneratorImage from "../assets/img/solar-leads.png";
 import FoundationImage from "../assets/img/foundation.png";
 import ReactiveNerdImage from "../assets/img/reactive-nerd.png";
 import MiniJavascriptAcademy from "../assets/img/javascript-academy.png";

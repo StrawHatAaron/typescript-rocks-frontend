@@ -1,5 +1,5 @@
 import React from "react";
-import { Route, Switch } from "react-router-dom";
+import { Route } from "react-router-dom";
 //material ui
 import { createStyles, makeStyles, Theme } from "@material-ui/core/styles";
 //aaron
@@ -35,7 +35,7 @@ const App = () => {
       <AppBarDrawer />
       <main className={classes.content}>
         <div className={classes.toolbar} />
-        {/* <Switch> */}
+
         {internalLandingRoutes.map((c) => (
           <Route
             key={c.route + "landing-pages-routes"}
@@ -44,7 +44,6 @@ const App = () => {
             component={c.view}
           />
         ))}
-        {/* </Switch> */}
       </main>
     </div>
   );
