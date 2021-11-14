@@ -11,7 +11,7 @@ import GitHubIcon from "@material-ui/icons/GitHub";
 import BookIcon from "@material-ui/icons/Book";
 import SettingsIcon from "@material-ui/icons/Settings";
 
-const baseRoute = "/typescript-rocks-frontend/";
+const baseRoute = "/";
 
 export const internalLandingRoutes = [
   {
@@ -32,12 +32,12 @@ export const internalLandingRoutes = [
     view: Contact,
     icon: MailIcon,
   },
-  {
-    name: "Blog",
-    route: baseRoute + "Blog",
-    view: Blog,
-    icon: BookIcon,
-  },
+  // {
+  //   name: "Blog",
+  //   route: baseRoute + "Blog",
+  //   view: Blog,
+  //   icon: BookIcon,
+  // },
   {
     name: "Settings",
     route: baseRoute + "Settings",
