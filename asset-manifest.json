@@ -1,21 +1,20 @@
 {
   "files": {
     "main.css": "/typescript-rocks-frontend/static/css/main.31446402.chunk.css",
-    "main.js": "/typescript-rocks-frontend/static/js/main.83863698.chunk.js",
-    "main.js.map": "/typescript-rocks-frontend/static/js/main.83863698.chunk.js.map",
+    "main.js": "/typescript-rocks-frontend/static/js/main.81e36b37.chunk.js",
+    "main.js.map": "/typescript-rocks-frontend/static/js/main.81e36b37.chunk.js.map",
     "runtime-main.js": "/typescript-rocks-frontend/static/js/runtime-main.e41478c4.js",
     "runtime-main.js.map": "/typescript-rocks-frontend/static/js/runtime-main.e41478c4.js.map",
-    "static/js/2.44fd26d4.chunk.js": "/typescript-rocks-frontend/static/js/2.44fd26d4.chunk.js",
-    "static/js/2.44fd26d4.chunk.js.map": "/typescript-rocks-frontend/static/js/2.44fd26d4.chunk.js.map",
+    "static/js/2.114444fc.chunk.js": "/typescript-rocks-frontend/static/js/2.114444fc.chunk.js",
+    "static/js/2.114444fc.chunk.js.map": "/typescript-rocks-frontend/static/js/2.114444fc.chunk.js.map",
     "index.html": "/typescript-rocks-frontend/index.html",
-    "precache-manifest.0ee2fbe8585f058f4491cbf04247dc36.js": "/typescript-rocks-frontend/precache-manifest.0ee2fbe8585f058f4491cbf04247dc36.js",
+    "precache-manifest.94c33671f88f3627dab5a1afd7241ebb.js": "/typescript-rocks-frontend/precache-manifest.94c33671f88f3627dab5a1afd7241ebb.js",
     "service-worker.js": "/typescript-rocks-frontend/service-worker.js",
     "static/css/main.31446402.chunk.css.map": "/typescript-rocks-frontend/static/css/main.31446402.chunk.css.map",
-    "static/js/2.44fd26d4.chunk.js.LICENSE.txt": "/typescript-rocks-frontend/static/js/2.44fd26d4.chunk.js.LICENSE.txt",
+    "static/js/2.114444fc.chunk.js.LICENSE.txt": "/typescript-rocks-frontend/static/js/2.114444fc.chunk.js.LICENSE.txt",
     "static/media/BuildTheLanes.png": "/typescript-rocks-frontend/static/media/BuildTheLanes.4910d33c.png",
     "static/media/DesignerWebs.png": "/typescript-rocks-frontend/static/media/DesignerWebs.85175369.png",
     "static/media/Duplicagent.png": "/typescript-rocks-frontend/static/media/Duplicagent.a4d612d0.png",
-    "static/media/LetItGo.png": "/typescript-rocks-frontend/static/media/LetItGo.b23c35cc.png",
     "static/media/foundation.png": "/typescript-rocks-frontend/static/media/foundation.bc3dcf00.png",
     "static/media/javascript-academy.png": "/typescript-rocks-frontend/static/media/javascript-academy.bb106cfd.png",
     "static/media/logo.svg": "/typescript-rocks-frontend/static/media/logo.5d5d9eef.svg",
@@ -23,8 +22,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.e41478c4.js",
-    "static/js/2.44fd26d4.chunk.js",
+    "static/js/2.114444fc.chunk.js",
     "static/css/main.31446402.chunk.css",
-    "static/js/main.83863698.chunk.js"
+    "static/js/main.81e36b37.chunk.js"
   ]
 }
