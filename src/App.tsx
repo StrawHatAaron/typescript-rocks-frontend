@@ -35,16 +35,16 @@ const App = () => {
       <AppBarDrawer />
       <main className={classes.content}>
         <div className={classes.toolbar} />
-        <Switch>
-          {internalLandingRoutes.map((c) => (
-            <Route
-              key={c.route + "landing-pages-routes"}
-              exact
-              path={c.route}
-              component={c.view}
-            />
-          ))}
-        </Switch>
+        {/* <Switch> */}
+        {internalLandingRoutes.map((c) => (
+          <Route
+            key={c.route + "landing-pages-routes"}
+            exact
+            path={c.route}
+            component={c.view}
+          />
+        ))}
+        {/* </Switch> */}
       </main>
     </div>
   );

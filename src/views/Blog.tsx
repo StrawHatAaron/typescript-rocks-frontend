@@ -11,7 +11,7 @@ import ExpandLess from "@material-ui/icons/ExpandLess";
 import ExpandMore from "@material-ui/icons/ExpandMore";
 import Breadcrumbs from "@material-ui/core/Breadcrumbs";
 import { Route, MemoryRouter } from "react-router";
-import { Link as RouterLink } from "react-router-dom";
+import { Link as RouterLink, Router } from "react-router-dom";
 import { Omit } from "@material-ui/types";
 
 interface ListItemLinkProps extends LinkProps {
