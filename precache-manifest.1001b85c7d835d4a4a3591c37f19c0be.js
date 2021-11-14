@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "da82ace3a74cd8d550ece0c316f0ebfe",
+    "revision": "444453bde3b8b50b7816a428fed1dd83",
     "url": "/typescript-rocks-frontend/index.html"
   },
   {
-    "revision": "4808b4a4341b1df50620",
+    "revision": "3e20d396186bd53f2129",
     "url": "/typescript-rocks-frontend/static/css/main.31446402.chunk.css"
   },
   {
-    "revision": "8ee1bcd93892242ec033",
-    "url": "/typescript-rocks-frontend/static/js/2.8eb9b5b2.chunk.js"
+    "revision": "e0ab595679184d86e386",
+    "url": "/typescript-rocks-frontend/static/js/2.8e7333dc.chunk.js"
   },
   {
     "revision": "0749163b59fbee32225059cb60c18af6",
-    "url": "/typescript-rocks-frontend/static/js/2.8eb9b5b2.chunk.js.LICENSE.txt"
+    "url": "/typescript-rocks-frontend/static/js/2.8e7333dc.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "4808b4a4341b1df50620",
-    "url": "/typescript-rocks-frontend/static/js/main.bf61d50d.chunk.js"
+    "revision": "3e20d396186bd53f2129",
+    "url": "/typescript-rocks-frontend/static/js/main.db266eb4.chunk.js"
   },
   {
     "revision": "4642bac29c7693b2ea7e",
@@ -54,9 +54,5 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "1c609496609a20b60438084e719ec27d",
     "url": "/typescript-rocks-frontend/static/media/reactive-nerd.1c609496.png"
-  },
-  {
-    "revision": "5d34e460a43464cc193f99159398f69e",
-    "url": "/typescript-rocks-frontend/static/media/solar-leads.5d34e460.png"
   }
 ]);
